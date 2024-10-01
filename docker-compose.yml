@@ -1,0 +1,36 @@
+services:
+  frontend:
+    container_name: container-front
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - "3000:3000"
+
+  # backend:
+  #   build:
+  #     context: ./backend
+  #   ports:
+  #     - "8000:80"
+  #   depends_on:
+  #     - database
+
+  # database:
+  #   image: mysql:5.7
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: rootpassword
+  #     MYSQL_DATABASE: laravel_db
+  #     MYSQL_USER: laravel_user
+  #     MYSQL_PASSWORD: laravel_password
+  #   ports:
+  #     - "3306:3306"
+  #   volumes:
+  #     - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
+
