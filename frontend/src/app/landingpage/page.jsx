@@ -2,7 +2,7 @@ import React from 'react'
 
 const LandingPage = () => {
   return (
-    <div className='font-black'>LandingPagemOlá</div>
+    <div className='font-black'>Não acredito</div>
   )
 }
 
