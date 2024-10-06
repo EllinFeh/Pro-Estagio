@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '@/components/navbar'
 
 const LandingPage = () => {
   return (
-    <div className='font-black'>Não acredito</div>
+    <>
+    <Navbar></Navbar>
+    </>
   )
 }
 

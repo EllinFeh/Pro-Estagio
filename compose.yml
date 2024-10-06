@@ -1,0 +1,45 @@
+services:
+#   CONTAINER DO FRONT.   #
+  react:
+    container_name: container-front
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - ./frontend:/app
+      - /node_modules
+      - /.next
+    environment:
+      - CHOKIDAR_USEPOLLING=true 
+    ports:
+      - 3000:3000
+#  /CONTAINER DO FRONT.   #
+
+#   CONTAINER DA API.   #
+  # api:
+  #   container_name: container-api-sea
+  #   build:
+  #     context: ./api
+  #     dockerfile: Dockerfile
+  #   volumes:
+  #     - ./api:/var/www/html
+  #   ports:
+  #     - '8000:80'
+#  /CONTAINER DA API.   #
+
+#   CONTAINER DO BANCO DE DADOS.   #
+  # db:
+  #   container_name: container-bd-sea
+  #   image: mysql:8.3.0
+  #   environment:
+  #     MYSQL_DATABASE: 'sea_db'
+  #     MYSQL_PASSWORD: 'root'
+  #     MYSQL_ROOT_PASSWORD: 'root'
+  #   volumes:
+  #     - mysql-data:/var/lib/mysql
+  #   ports:
+  #     - '3308:3306'
+#  /CONTAINER DO BANCO DE DADOS.   #
+# volumes:
+#       mysql-data:
