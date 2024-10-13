@@ -55,7 +55,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className='bg-verdemain h-14 text-preto font-bold flex items-center justify-between px-12 max-sm:gap-'>
+            <nav className='bg-verdemain h-14 text-preto font-bold flex items-center justify-between px-12 z-50 fixed top-0 w-full'>
 
                 <motion.div>
                     {/* Menu Hamburguer */}
@@ -90,7 +90,7 @@ const Navbar = () => {
 
             <AnimatePresence>
                 {isOpen && (
-                    <motion.div className="menu" initial="hidden"
+                    <motion.div className="menu z-40 fixed top-0 w-full mt-14" initial="hidden"
                         animate={isOpen ? "visible" : "hidden"}
                         exit="hidden"
                         variants={navContainer}
