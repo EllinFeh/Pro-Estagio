@@ -1,27 +1,14 @@
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\app\\layout.js","import":"","arguments":[{"src":"./fonts/GeistVF.woff","variable":"--font-geist-sans","weight":"100 900"}],"variableName":"geistSans"} ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\app\\layout.js","import":"","arguments":[{"src":"./fonts/inter.ttf","variable":"inter-font","weight":"100 900"}],"variableName":"Inter"} ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
-font-family: '__geistSans_1e4310';
-src: url(/_next/static/media/4473ecc91f70f139-s.p.woff) format('woff');
+font-family: '__Inter_cd37a3';
+src: url(/_next/static/media/cc27cf3ff100ea21-s.p.ttf) format('truetype');
 font-display: swap;
 font-weight: 100 900;
-}@font-face {font-family: '__geistSans_Fallback_1e4310';src: local("Arial");ascent-override: 85.83%;descent-override: 20.52%;line-gap-override: 9.33%;size-adjust: 107.19%
-}.__className_1e4310 {font-family: '__geistSans_1e4310', '__geistSans_Fallback_1e4310'
-}.__variable_1e4310 {--font-geist-sans: '__geistSans_1e4310', '__geistSans_Fallback_1e4310'
-}
-
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\app\\layout.js","import":"","arguments":[{"src":"./fonts/GeistMonoVF.woff","variable":"--font-geist-mono","weight":"100 900"}],"variableName":"geistMono"} ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-font-family: '__geistMono_c3aa02';
-src: url(/_next/static/media/463dafcda517f24f-s.p.woff) format('woff');
-font-display: swap;
-font-weight: 100 900;
-}@font-face {font-family: '__geistMono_Fallback_c3aa02';src: local("Arial");ascent-override: 69.97%;descent-override: 16.73%;line-gap-override: 7.61%;size-adjust: 131.49%
-}.__className_c3aa02 {font-family: '__geistMono_c3aa02', '__geistMono_Fallback_c3aa02'
-}.__variable_c3aa02 {--font-geist-mono: '__geistMono_c3aa02', '__geistMono_Fallback_c3aa02'
+}@font-face {font-family: '__Inter_Fallback_cd37a3';src: local("Arial");ascent-override: 89.79%;descent-override: 22.36%;line-gap-override: 0.00%;size-adjust: 107.89%
+}.__className_cd37a3 {font-family: '__Inter_cd37a3', '__Inter_Fallback_cd37a3'
+}.__variable_cd37a3 {inter-font: '__Inter_cd37a3', '__Inter_Fallback_cd37a3'
 }
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
@@ -1143,6 +1130,10 @@ input[type="range"]::-ms-fill-lower {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
 .-mb-px {
   margin-bottom: -1px;
 }
@@ -1223,6 +1214,21 @@ input[type="range"]::-ms-fill-lower {
 }
 .mt-6 {
   margin-top: 1.5rem;
+}
+.mt-12 {
+  margin-top: 3rem;
+}
+.mb-12 {
+  margin-bottom: 3rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
+}
+.mb-24 {
+  margin-bottom: 6rem;
+}
+.mt-24 {
+  margin-top: 6rem;
 }
 .block {
   display: block;
@@ -1325,6 +1331,15 @@ input[type="range"]::-ms-fill-lower {
 }
 .h-screen {
   height: 100vh;
+}
+.h-\[20px\] {
+  height: 20px;
+}
+.h-\[30px\] {
+  height: 30px;
+}
+.h-\[25px\] {
+  height: 25px;
 }
 .max-h-\[90dvh\] {
   max-height: 90dvh;
@@ -1457,6 +1472,18 @@ input[type="range"]::-ms-fill-lower {
 }
 .max-w-xs {
   max-width: 20rem;
+}
+.max-w-10 {
+  max-width: 2.5rem;
+}
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+.max-w-\[500px\] {
+  max-width: 500px;
+}
+.max-w-\[700px\] {
+  max-width: 700px;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -1730,6 +1757,9 @@ input[type="range"]::-ms-fill-lower {
 }
 .rounded-none {
   border-radius: 0px;
+}
+.rounded-2xl {
+  border-radius: 1rem;
 }
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
@@ -2525,6 +2555,10 @@ input[type="range"]::-ms-fill-lower {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -2536,6 +2570,18 @@ input[type="range"]::-ms-fill-lower {
 }
 .font-semibold {
   font-weight: 600;
+}
+.font-extralight {
+  font-weight: 200;
+}
+.font-thin {
+  font-weight: 100;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+.font-light {
+  font-weight: 300;
 }
 .uppercase {
   text-transform: uppercase;
@@ -2554,6 +2600,9 @@ input[type="range"]::-ms-fill-lower {
 }
 .leading-tight {
   line-height: 1.25;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 .text-blue-500 {
   --tw-text-opacity: 1;
@@ -2977,12 +3026,12 @@ input[type="range"]::-ms-fill-lower {
   --foreground: #1E1E1E;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #1E1E1E;
     --foreground: #EFEFEF;
   }
-}
+} */
 
 body {
   color: var(--foreground);
